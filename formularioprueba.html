@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+</head>
+<body>
+  
+<header>Número incidencia:    Q1167</header> <nbsp>
+
+<h1>Información del usuario:</h1>
+
+<form>
+
+<label for="name">Nombre del cliente:</label> <input type="text" id="name" name="name" placeholder="Your name" autocomplete="off" minlength="5" maxlength="50" required> <nbsp></nbsp> <label for="Identificación">Identificación</label> <input type="text" id="Identificación" name="Identificación" pattern="^[0-9]+$" title="Por favor, ingresa solo numeros" autocomplete="off" required> <br> <p></p> <label for="Tipo de identificación">Tipo de identificación:</label>
+  <select name="Tipo de identificación" id="Tipo de identificación" required>
+    <option value="" disabled selected hidden>Seleccione</option>  
+    <option value="1">Cedula de Ciudadania</option>
+    <option value="2">Tarjeta de identidad</option>
+    <option value="3">Pasaporte</option>
+  </select>
+    </nbsp>
+<label for="Tipo de solicitante">Tipo de solicitante</label>
+ <select name="Tipo de solicitante" id="Tipo de solicitante" required>
+    <option value="" disabled selected hidden>Selecciona</option>  
+    <option value="1">03-Docente</option>
+    <option value="2">04-Docente</option>
+    <option value="3">05-Docente</option>
+  </select><br>
+  <br>
+  <label for="email">Email: </label><input type="email" id="email" name="email" placeholder="correo@example.com" autocomplete="off" minlength="5" maxlength="50" required>
+  <br>
+  <br>
+  <input type="submit" value="Send">
+    
+
+
+</form>
+
+
+
+
+</body>
+</html>
+
