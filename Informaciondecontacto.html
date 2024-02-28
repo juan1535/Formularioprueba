@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <header>Información de contacto: </header>
+  <br>
+  <br>
+  <form>
+
+<label for="País">País:  </label>
+  <select name="País" id="País" required>
+    <option value="" disabled selected hidden>Seleciona tu país</option>  
+    <option value="1">Colombia</option>
+    <option value="2">Venezuela</option>
+    <option value="3">Ecuador</option>
+  </select>
+ <nbsp>
+  <label for="Departamento">Departamento:  </label>
+  <select name="Departamento" id="Departamento" required>
+    <option value="" disabled selected hidden>Seleciona tu departamento</option>  
+    <option value="1">Amazonas</option>
+    <option value="2">Guaranda</option>
+    <option value="3">Caracas</option>
+  </select>
+ </nbsp>
+ <br>
+ <br>
+  <label for="Ciudad">Ciudad:  </label>
+  <select name="Ciudad" id="Ciudad" required>
+    <option value="" disabled selected hidden>Seleciona tu ciudad</option>  
+    <option value="1">Bogotá</option>
+    <option value="2">Quito</option>
+    <option value="3">Caracas</option>
+  </select>
+  <br>
+  <br>
+  <label for="Teléfono">Teléfono:</label>
+  <input type="text" id="Teléfono" name="Teléfono" pattern="^[0-9]+$" minlength="5" maxlength="10" title="Por favor, ingresa solo numeros" autocomplete="off" required> <nbsp>
+    <label for="Celular">Celular:</label>
+  <input type="text" id="Celular" name="Celular" pattern="^[0-9]+$" minlength="5" maxlength="10" title="Por favor, ingresa solo numeros" autocomplete="off" required>
+  </nbsp>
+  <br>
+  <br>
+  <label for="Medio de contacto preferido">Medio de contacto preferido:  </label>
+  <select name="Medio de contacto preferido" id="Medio de contacto preferido" required>
+    <option value="" disabled selected hidden>Seleciona</option>  
+    <option value="1">Redes sociales</option>
+    <option value="2">Blog</option>
+    <option value="3">Correo escrito</option>
+  </select>
+  <nbsp>
+<label for="Dirección">Dirección:</label>
+  <input type="text" id="Dirección" name="Dirección" minlength="5" maxlength="100" autocomplete="off" required>
+  </nbsp>
+  <br>
+  <br>
+  <input type="submit" value="Send">
+  </form>
+
+
+
+
+
+
+
+</body>
+</html>
