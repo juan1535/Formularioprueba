@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+<header>Información de solicitud</header>
+<br>
+
+<form>
+
+<label for="Fecha de vencimiento">Fecha de vencimiento:</label>
+<input type="date" id="Fecha de vencimiento" name="Fecha de vencimiento" required>
+<br>
+<br>
+<label for="Asunto">Asunto:</label>
+  <select name="Asunto" id="Asunto" required>
+    <option value="" disabled selected hidden>Seleciona un asunto</option>  
+    <option value="1">Queja</option>
+    <option value="2">Reclamo</option>
+    <option value="3">Informe</option>
+  </select>
+<br>
+<br>
+  <label for="Descripción">Descripción:</label>  <input type="text" id="Descripción" name="Descripción" pattern="^[A-Za-z]+$" minlength="5" maxlength="100" autocomplete="off" style="width: 300px; height: 100px;" required>
+  <br>
+  <br>
+  <label for="images">Adjunto:</label>
+  <input type="file" id="Adjunto" name="Adjunto" accept=".png, .jpg" multiple>
+
+  <br>
+  <br>
+  <input type="submit" value="Send">
+
+</form>
+
+
+
+</body>
+</html>
